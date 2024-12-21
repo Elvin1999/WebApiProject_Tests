@@ -49,7 +49,7 @@ namespace WebApiProject.Services
             var item = products.FirstOrDefault(p => p.Id == product.Id);
             if (item != null)
             {
-                item.Name = product.Name;
+                item.Name = product.Name+DateTime.Now.ToLongTimeString();
                 item.Price = product.Price;
             }
             return product;
