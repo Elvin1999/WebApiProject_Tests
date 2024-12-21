@@ -21,7 +21,6 @@ namespace WebApiProject.Services
         };
         public Product Add(Product product)
         {
-            product.Name += DateTime.Now.ToLongTimeString();
             products.Add(product);
             return product;
         }
